@@ -38,6 +38,11 @@ h1, h3, p {
    
 }
 
+img {
+float:inline-start;
+width: 20%;
+  height: auto;
+}
 
 .container {
   float:right;
