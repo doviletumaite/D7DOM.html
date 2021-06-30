@@ -13,10 +13,10 @@
 
     <div class="tab">
         <table>
-            <header>
+            <h3>
               <strong>TOP PRODUCTS</strong>
              
-            </header>
+           </h3>
             <tr>
             <td></td>
               <td><strong>NAME</strong></td>
@@ -68,6 +68,50 @@
               </form>
                
         </footer>
+
+<script lang="text/javascript">
+
+function changeH1Text() {
+  document.querySelector("h1").innerHTML =  "Change!";
+}
+
+function changeBackgroundColor() {
+  document.querySelector("body").style.backgroundColor = "blue";
+}
+
+function changeFakeAddress() {
+  document.querySelector("footer > div:nth-child(2)").innerHTML =
+  "Fake address ºÐP,";
+}
+
+function addClassToLinks() {
+  for (let node of document.querySelectorAll("a")) {
+    node.classList.add("giant-font");
+  }
+}
+
+function toggleImagesClass() {
+  for (let image of document.querySelectorAll("img")) {
+    image.classList.toggle("hidden");
+  }
+}
+
+function setRandomColor() {
+  const color = getRandomColor();
+  for (let price of document.querySelectorAll("tr > td:nth-child(4)")) {
+    price.style.color = color;
+  }
+}
+
+function getRandomColor() {
+  const red = Math.round(Math.random() * 255);
+  const yellow = Math.round(Math.random() * 255);
+  const blue = Math.round(Math.random() * 255);
+
+  return "rgb(" + red + "," + yellow + "," + blue +")";
+}
+
+</script>
 </body>
 </html>
 
