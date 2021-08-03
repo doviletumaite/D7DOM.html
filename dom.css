@@ -43,6 +43,9 @@ float:inline-start;
 width: 20%;
   height: auto;
 }
+.hidden {
+  visibility: hidden;
+}
 
 .container {
   float:right;
@@ -65,7 +68,6 @@ width: 20%;
   }
   table {
     width:100%;
-   
   }
   table, th, td {
     border: 1px solid;
@@ -74,10 +76,12 @@ width: 20%;
   th, td {
     padding: 35px;
   }
+  .giant-font {
+    color: black;
+    font-size: 3rem;
+  }
   footer {
     background-color: rgba(48, 85, 56, 0.657);
     padding: 10px;
     text-align: center;
-   
-   
   }
